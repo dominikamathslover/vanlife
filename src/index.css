@@ -29,11 +29,13 @@ main {
   height: 80vh;
   color: white;
   font-family: var(--p-font);
+  background-size: cover;
 }
 p {
   padding: 0.3em 3em;
   word-spacing: 3px;
   letter-spacing: 2px;
+  max-width: 600px;
 }
 
 /* =================================
@@ -66,7 +68,6 @@ p {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/public/images/vannight.jpg");
-  background-size: cover;
   background-position: center;
 }
 
@@ -76,6 +77,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .btns {
