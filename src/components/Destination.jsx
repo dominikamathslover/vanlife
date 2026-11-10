@@ -14,12 +14,17 @@ export default function Destination() {
   return (
     <>
       <main>
-        <h1>Destination details</h1>
         {destination ? (
           <>
             <div className="data">
-              <img src={destination.imageUrl} alt={destination.name} />
-
+              <div
+                className="data-img"
+                style={{
+                  backgroundImage: `url(${destination.imageUrl})`,
+                }}
+              >
+                <h1 className="title-black">Destination details</h1>
+              </div>
               <h2 className="data-title">{destination.name}</h2>
               <p>{destination.description}</p>
 
