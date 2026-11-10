@@ -41,3 +41,8 @@ footer {
   font-size: 0.6em;
   padding: 0;
 }
+
+.active {
+  color: rgb(48, 27, 131);
+  text-shadow: 1px 1px 0px black;
+}
