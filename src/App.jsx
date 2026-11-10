@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Destinations from "./components/Destinations";
+import Destination from "./components/Destination";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             </div>
           </Link>
           <div>
-            <Link className="link nav-btn" to="./destinations">
+            <Link className="link nav-btn" to="/destinations">
               Destinations
             </Link>
             <Link className="link nav-btn" to="/gallery">
@@ -40,6 +41,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/destinations/:id" element={<Destination />}></Route>
       </Routes>
       <Footer />
     </>
