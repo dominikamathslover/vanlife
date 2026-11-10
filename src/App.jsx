@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router";
+import { Routes, Route, NavLink, Link } from "react-router";
 import { LuCaravan } from "react-icons/lu";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -20,18 +20,38 @@ function App() {
             </div>
           </Link>
           <div>
-            <Link className="link nav-btn" to="/destinations">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link nav-btn active" : "link nav-btn"
+              }
+              to="/destinations"
+            >
               Destinations
-            </Link>
-            <Link className="link nav-btn" to="/gallery">
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link nav-btn active" : "link nav-btn"
+              }
+              to="/gallery"
+            >
               Gallery
-            </Link>
-            <Link className="link nav-btn" to="/about">
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link nav-btn active" : "link nav-btn"
+              }
+              to="/about"
+            >
               About
-            </Link>
-            <Link className="link nav-btn" to="/contact">
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link nav-btn active" : "link nav-btn"
+              }
+              to="/contact"
+            >
               Contact
-            </Link>
+            </NavLink>
           </div>
         </nav>
       </header>
